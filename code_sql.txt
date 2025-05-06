@@ -1,0 +1,287 @@
+CREATE TABLE `mobileshop`.`user` (
+
+`id` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`username` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`fullname` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+ 
+`email` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`password` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`avatar` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+
+`phone` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`address` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`initdate` DATE NOT NULL ,
+
+`permission` TINYINT DEFAULT '0' NOT NULL , 
+
+`status` TINYINT DEFAULT '1' NOT NULL ,
+
+PRIMARY KEY (`id`(20))
+
+) ENGINE = InnoDB;
+
+
+CREATE TABLE `mobileshop`.brand (
+
+`id` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`name` VARCHAR(100) NOT NULL , 
+
+`imageurl` TEXT NOT NULL , 
+
+PRIMARY KEY (`id`(20))
+
+) ENGINE = InnoDB;
+
+
+CREATE TABLE `mobileshop`.`product` (
+
+`id` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`brand` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`name` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+
+`repreimageurl` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`minimportprice` DOUBLE NOT NULL , 
+
+`minsaleprice` DOUBLE NOT NULL,
+
+`discount` TINYINT DEFAULT '0' NOT NULL , 
+
+`detail` TEXT NOT NULL , 
+
+`warrantyperiod` DOUBLE NOT NULL,
+
+`status` TINYINT NOT NULL , 
+
+PRIMARY KEY (`id`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `product` ADD CONSTRAINT `fk_product_brand` FOREIGN KEY (`brand`) REFERENCES `brand`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+CREATE TABLE `mobileshop`.`color` (
+
+`rgb` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`name` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+PRIMARY KEY (`rgb`(50))
+
+) ENGINE = InnoDB;
+
+
+CREATE TABLE `mobileshop`.`image` (
+
+`id` VARCHAR(20) NOT NULL , 
+
+`product` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+
+`color` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`imageurl` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+
+PRIMARY KEY (`id`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `color_product` ADD CONSTRAINT `fk_image_product` FOREIGN KEY (`product`) REFERENCES `product`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `color_product` ADD CONSTRAINT `fk_image_color` FOREIGN KEY (`color`) REFERENCES `color`(`rgb`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+CREATE TABLE `mobileshop`.`option` (
+
+`id` VARCHAR(20) NOT NULL , 
+
+`product` VARCHAR(20) NOT NULL , 
+
+`color` INT NOT NULL , 
+
+`rom` INT NOT NULL , 
+
+`ram` INT NOT NULL , 
+
+`importprice` DOUBLE NOT NULL , 
+
+`saleprice` DOUBLE NOT NULL , 
+
+`remain` INT NOT NULL , 
+
+`sold` INT NOT NULL , 
+
+PRIMARY KEY (`id`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `option` ADD CONSTRAINT `fk_option_product` FOREIGN KEY (`product`) REFERENCES `product`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `option` ADD CONSTRAINT `fk_option_color` FOREIGN KEY (`color`) REFERENCES `color`(`rgb`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+CREATE TABLE `mobileshop`.`order` (
+
+`id` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`user` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`phone` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`address` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`initdate` DATETIME NOT NULL ,  
+
+`orderprice` DOUBLE NOT NULL , 
+
+`delidate` DATE DEFAULT NULL , 
+
+`payment` TINYINT NOT NULL ,
+
+`status` TINYINT DEFAULT '0' NOT NULL ,
+
+PRIMARY KEY (`id`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `order` ADD CONSTRAINT `fk_order_user` FOREIGN KEY (`user`) REFERENCES `user`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+CREATE TABLE `mobileshop`.`orderdetail` (
+
+`order` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`option` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`quantity` INT NOT NULL , 
+
+`totalprice` DOUBLE NOT NULL , 
+
+PRIMARY KEY (`orderid`(20), `optionid`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `orderdetail` ADD CONSTRAINT `fk_orderdetail_order` FOREIGN KEY (`order`) REFERENCES `order`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `orderdetail` ADD CONSTRAINT `fk_orderdetail_option` FOREIGN KEY (`option`) REFERENCES `option`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+CREATE TABLE `mobileshop`.`importinvoice` (
+
+`id` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`user` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+
+`initdate` DATETIME NOT NULL , 
+
+`price` DOUBLE NOT NULL , 
+
+PRIMARY KEY (`id`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `importinvoice` ADD CONSTRAINT `fk_importinvoice_user` FOREIGN KEY (`user`) REFERENCES `user`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+CREATE TABLE `mobileshop`.`exportinvoice` (
+
+`id` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`user` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+
+`initdate` DATETIME NOT NULL , 
+
+`price` DOUBLE NOT NULL , 
+
+PRIMARY KEY (`id`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `exportinvoice` ADD CONSTRAINT `fk_exportinvoice_user` FOREIGN KEY (`user`) REFERENCES `user`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+CREATE TABLE `mobileshop`.`importdetail` (
+
+`invoice` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`option` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`quantity` INT NOT NULL , 
+
+`totalprice` DOUBLE NOT NULL , 
+
+PRIMARY KEY (`imid`(20), `optionid`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `importdetail` ADD CONSTRAINT `fk_importdetail_importinvoice` FOREIGN KEY (`invoice`) REFERENCES `importinvoice`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `importdetail` ADD CONSTRAINT `fk_importdetail_option` FOREIGN KEY (`option`) REFERENCES `option`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+CREATE TABLE `mobileshop`.`exportdetail` (
+
+`invoice` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`option` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`quantity` INT NOT NULL , 
+
+`totalprice` DOUBLE NOT NULL , 
+
+PRIMARY KEY (`exid`(20), `optionid`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `exportdetail` ADD CONSTRAINT `fk_exportdetail_exportinvoice` FOREIGN KEY (`invoice`) REFERENCES `exportinvoice`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `exportdetail` ADD CONSTRAINT `fk_exportdetail_option` FOREIGN KEY (`option`) REFERENCES `option`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+CREATE TABLE `mobileshop`.`warranty` (
+
+`id` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`user` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`option` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`initdate` DATETIME NOT NULL , 
+
+PRIMARY KEY (`id`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `warranty` ADD CONSTRAINT `fk_warranty_user` FOREIGN KEY (`user`) REFERENCES `user`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `warranty` ADD CONSTRAINT `fk_warranty_option` FOREIGN KEY (`option`) REFERENCES `option`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+CREATE TABLE `mobileshop`.`warrantyinvoice` (
+
+`id` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`warranty` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , 
+
+`describe` TEXT NOT NULL , `innidate` DATE NOT NULL , 
+
+`initdate` DATETIME NOT NULL , 
+
+`expense` DOUBLE NOT NULL , 
+
+PRIMARY KEY (`id`(20))
+
+) ENGINE = InnoDB;
+
+ALTER TABLE `warrantyinvoice` ADD CONSTRAINT `fk_warrantyinvoice_warranty` FOREIGN KEY (`warranty`) REFERENCES `warranty`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+
