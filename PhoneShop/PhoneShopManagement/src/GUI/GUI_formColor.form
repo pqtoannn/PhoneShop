@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="crazyPanel_SearchByPrice" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
+              <Component id="btn_Save" min="-2" pref="100" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="crazyPanel_SearchByPrice" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="btn_Save" min="-2" pref="30" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="raven.crazypanel.CrazyPanel" name="crazyPanel_SearchByPrice">
+      <Properties>
+        <Property name="flatLafStyleComponent" type="raven.crazypanel.FlatLafStyleComponent" editor="raven.crazypanel.bean.editor.FlatLafStyleEditor">
+          <SerializedValue value="-84,-19,0,5,115,114,0,38,114,97,118,101,110,46,99,114,97,122,121,112,97,110,101,108,46,70,108,97,116,76,97,102,83,116,121,108,101,67,111,109,112,111,110,101,110,116,-45,-56,5,104,-120,-26,26,62,2,0,2,76,0,8,111,119,110,83,116,121,108,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,91,0,6,115,116,121,108,101,115,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,116,0,0,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,83,116,114,105,110,103,59,-83,-46,86,-25,-23,29,123,71,2,0,0,120,112,0,0,0,27,116,0,13,102,111,110,116,58,98,111,108,100,32,43,49,48,116,0,12,102,111,110,116,58,98,111,108,100,32,43,49,116,0,0,116,0,0,116,0,53,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,102,105,114,115,116,116,0,52,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,108,97,115,116,116,0,0,116,0,65,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,101,46,103,46,32,116,101,115,108,97,32,109,111,116,111,114,115,116,0,0,116,0,70,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,101,46,103,46,32,101,120,97,109,112,108,101,64,103,109,97,105,108,46,99,111,109,116,0,0,116,0,12,102,111,110,116,58,98,111,108,100,32,43,49,116,0,0,116,0,0,116,0,65,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,115,116,114,101,101,116,46,32,97,112,116,47,115,117,105,116,101,116,0,0,116,0,64,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,111,102,102,105,99,101,46,114,111,111,109,47,102,108,97,116,116,0,0,116,0,20,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,116,0,0,116,0,0,116,0,0,116,0,20,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,116,0,0,116,0,20,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,116,0,0,116,0,73,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,102,111,114,32,117,115,32,110,111,110,45,114,101,115,105,100,101,110,116,115,32,111,110,108,121"/>
+        </Property>
+        <Property name="migLayoutConstraints" type="raven.crazypanel.MigLayoutConstraints" editor="raven.crazypanel.bean.editor.MigPanelEditor">
+          <SerializedValue value="-84,-19,0,5,115,114,0,37,114,97,118,101,110,46,99,114,97,122,121,112,97,110,101,108,46,77,105,103,76,97,121,111,117,116,67,111,110,115,116,114,97,105,110,116,115,7,-4,-14,44,102,-86,-49,42,2,0,4,76,0,17,99,111,108,117,109,110,67,111,110,115,116,114,97,105,110,116,115,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,91,0,19,99,111,109,112,111,110,101,110,116,67,111,110,115,116,114,97,105,110,116,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,76,0,17,108,97,121,111,117,116,67,111,110,115,116,114,97,105,110,116,115,113,0,126,0,1,76,0,14,114,111,119,67,111,110,115,116,114,97,105,110,116,115,113,0,126,0,1,120,112,116,0,22,91,103,114,111,119,32,48,44,116,114,97,105,108,93,49,53,91,102,105,108,108,93,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,83,116,114,105,110,103,59,-83,-46,86,-25,-23,29,123,71,2,0,0,120,112,0,0,0,28,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,0,116,0,7,115,112,108,105,116,32,50,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,116,0,13,115,112,97,110,32,50,44,103,114,111,119,32,49,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,116,0,15,115,112,97,110,32,50,44,97,108,32,116,114,97,105,108,116,0,22,119,114,97,112,32,50,44,102,105,108,108,120,44,105,110,115,101,116,115,32,50,53,116,0,0"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="170" max="32767" attributes="0"/>
+                  <Component id="btn_chooseColor" min="-2" pref="100" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                          <Component id="jLabel15" min="-2" pref="90" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txt_name" min="-2" pref="240" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="lbl_showColor" min="-2" pref="350" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+                          <Component id="lbl_rgb" min="-2" pref="190" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_name" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="jLabel15" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="lbl_rgb" min="-2" pref="30" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="btn_chooseColor" min="-2" pref="30" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="lbl_showColor" min="-2" pref="100" max="-2" attributes="0"/>
+                  <EmptySpace pref="35" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="txt_name">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel15">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="T&#xea;n m&#xe0;u"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btn_chooseColor">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ch&#x1ecd;n m&#xe0;u"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_chooseColorActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_rgb">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_showColor">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="btn_Save">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="L&#x1b0;u"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_SaveActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

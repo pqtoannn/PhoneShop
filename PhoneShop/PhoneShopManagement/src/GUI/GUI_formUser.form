@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowClosed" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowClosed"/>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowClosing"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="crazyPanel_Main" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="crazyPanel_Main" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="4" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="raven.crazypanel.CrazyPanel" name="crazyPanel_Main">
+      <Properties>
+        <Property name="flatLafStyleComponent" type="raven.crazypanel.FlatLafStyleComponent" editor="raven.crazypanel.bean.editor.FlatLafStyleEditor">
+          <SerializedValue value="-84,-19,0,5,115,114,0,38,114,97,118,101,110,46,99,114,97,122,121,112,97,110,101,108,46,70,108,97,116,76,97,102,83,116,121,108,101,67,111,109,112,111,110,101,110,116,-45,-56,5,104,-120,-26,26,62,2,0,2,76,0,8,111,119,110,83,116,121,108,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,91,0,6,115,116,121,108,101,115,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,116,0,0,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,83,116,114,105,110,103,59,-83,-46,86,-25,-23,29,123,71,2,0,0,120,112,0,0,0,27,116,0,13,102,111,110,116,58,98,111,108,100,32,43,49,48,116,0,12,102,111,110,116,58,98,111,108,100,32,43,49,113,0,126,0,4,113,0,126,0,4,116,0,53,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,102,105,114,115,116,116,0,52,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,108,97,115,116,113,0,126,0,4,116,0,65,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,101,46,103,46,32,116,101,115,108,97,32,109,111,116,111,114,115,113,0,126,0,4,116,0,70,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,101,46,103,46,32,101,120,97,109,112,108,101,64,103,109,97,105,108,46,99,111,109,113,0,126,0,4,116,0,12,102,111,110,116,58,98,111,108,100,32,43,49,113,0,126,0,4,113,0,126,0,4,116,0,65,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,115,116,114,101,101,116,46,32,97,112,116,47,115,117,105,116,101,113,0,126,0,4,116,0,64,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,111,102,102,105,99,101,46,114,111,111,109,47,102,108,97,116,113,0,126,0,4,116,0,20,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,116,0,20,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,113,0,126,0,4,116,0,20,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,113,0,126,0,4,116,0,73,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,102,111,114,32,117,115,32,110,111,110,45,114,101,115,105,100,101,110,116,115,32,111,110,108,121"/>
+        </Property>
+        <Property name="migLayoutConstraints" type="raven.crazypanel.MigLayoutConstraints" editor="raven.crazypanel.bean.editor.MigPanelEditor">
+          <SerializedValue value="-84,-19,0,5,115,114,0,37,114,97,118,101,110,46,99,114,97,122,121,112,97,110,101,108,46,77,105,103,76,97,121,111,117,116,67,111,110,115,116,114,97,105,110,116,115,7,-4,-14,44,102,-86,-49,42,2,0,4,76,0,17,99,111,108,117,109,110,67,111,110,115,116,114,97,105,110,116,115,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,91,0,19,99,111,109,112,111,110,101,110,116,67,111,110,115,116,114,97,105,110,116,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,76,0,17,108,97,121,111,117,116,67,111,110,115,116,114,97,105,110,116,115,113,0,126,0,1,76,0,14,114,111,119,67,111,110,115,116,114,97,105,110,116,115,113,0,126,0,1,120,112,116,0,22,91,103,114,111,119,32,48,44,116,114,97,105,108,93,49,53,91,102,105,108,108,93,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,83,116,114,105,110,103,59,-83,-46,86,-25,-23,29,123,71,2,0,0,120,112,0,0,0,28,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,0,116,0,7,115,112,108,105,116,32,50,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,116,0,13,115,112,97,110,32,50,44,103,114,111,119,32,49,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,116,0,15,115,112,97,110,32,50,44,97,108,32,116,114,97,105,108,116,0,22,119,114,97,112,32,50,44,102,105,108,108,120,44,105,110,115,101,116,115,32,50,53,113,0,126,0,10"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel35" min="-2" pref="92" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="lbl_chooseAvatar" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_Avatar" min="-2" pref="212" max="-2" attributes="0"/>
+                              <Component id="lbl_UserID" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel1" min="-2" pref="230" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btn_Refresh" min="-2" pref="93" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace pref="28" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="cbx_ChangeMode" min="-2" pref="120" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="267" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="crazyPanel_Detail" alignment="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn_Refresh" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel35" min="-2" pref="20" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="cbx_ChangeMode" min="-2" pref="31" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="crazyPanel_Detail" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lbl_UserID" min="-2" pref="30" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lbl_Avatar" min="-2" pref="242" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lbl_chooseAvatar" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lbl_Avatar">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_UserID">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_chooseAvatar">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/assets/icons8-add-image-40.png"/>
+            </Property>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lbl_chooseAvatarMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbx_ChangeMode">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Ch&#x1ebf; &#x111;&#x1ed9;"/>
+                <StringItem index="1" value="Ch&#x1ec9; xem"/>
+                <StringItem index="2" value="Ch&#x1ec9; th&#xea;m"/>
+                <StringItem index="3" value="Ch&#x1ec9; s&#x1eed;a"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cbx_ChangeModeItemStateChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Th&#xf4;ng tin t&#xe0;i kho&#x1ea3;n"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel35">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="M&#xe3; ng&#x1b0;&#x1edd;i d&#xf9;ng"/>
+          </Properties>
+        </Component>
+        <Container class="raven.crazypanel.CrazyPanel" name="crazyPanel_Detail">
+          <Properties>
+            <Property name="flatLafStyleComponent" type="raven.crazypanel.FlatLafStyleComponent" editor="raven.crazypanel.bean.editor.FlatLafStyleEditor">
+              <SerializedValue value="-84,-19,0,5,115,114,0,38,114,97,118,101,110,46,99,114,97,122,121,112,97,110,101,108,46,70,108,97,116,76,97,102,83,116,121,108,101,67,111,109,112,111,110,101,110,116,-45,-56,5,104,-120,-26,26,62,2,0,2,76,0,8,111,119,110,83,116,121,108,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,91,0,6,115,116,121,108,101,115,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,116,0,0,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,83,116,114,105,110,103,59,-83,-46,86,-25,-23,29,123,71,2,0,0,120,112,0,0,0,15,116,0,53,115,104,111,119,67,108,101,97,114,66,117,116,116,111,110,58,116,114,117,101,59,74,84,101,120,116,70,105,101,108,100,46,112,108,97,99,101,104,111,108,100,101,114,84,101,120,116,61,102,105,114,115,116,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4,113,0,126,0,4"/>
+            </Property>
+            <Property name="migLayoutConstraints" type="raven.crazypanel.MigLayoutConstraints" editor="raven.crazypanel.bean.editor.MigPanelEditor">
+              <SerializedValue value="-84,-19,0,5,115,114,0,37,114,97,118,101,110,46,99,114,97,122,121,112,97,110,101,108,46,77,105,103,76,97,121,111,117,116,67,111,110,115,116,114,97,105,110,116,115,7,-4,-14,44,102,-86,-49,42,2,0,4,76,0,17,99,111,108,117,109,110,67,111,110,115,116,114,97,105,110,116,115,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,91,0,19,99,111,109,112,111,110,101,110,116,67,111,110,115,116,114,97,105,110,116,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,76,0,17,108,97,121,111,117,116,67,111,110,115,116,114,97,105,110,116,115,113,0,126,0,1,76,0,14,114,111,119,67,111,110,115,116,114,97,105,110,116,115,113,0,126,0,1,120,112,116,0,22,91,103,114,111,119,32,48,44,116,114,97,105,108,93,49,53,91,102,105,108,108,93,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,83,116,114,105,110,103,59,-83,-46,86,-25,-23,29,123,71,2,0,0,120,112,0,0,0,28,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,0,116,0,7,115,112,108,105,116,32,50,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,116,0,13,115,112,97,110,32,50,44,103,114,111,119,32,49,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,116,0,12,119,114,97,112,44,97,108,32,108,101,97,100,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,113,0,126,0,10,116,0,15,115,112,97,110,32,50,44,97,108,32,116,114,97,105,108,116,0,22,119,114,97,112,32,50,44,102,105,108,108,120,44,105,110,115,101,116,115,32,50,53,113,0,126,0,10"/>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="lbl_deliDate2" min="-2" pref="90" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lbl_deliDate" min="-2" pref="90" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="lbl_status" max="32767" attributes="0"/>
+                                  <Component id="cbx_Role" pref="181" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="btn_Save" max="32767" attributes="0"/>
+                                  <Component id="btn_state" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lbl_OrderPrice" min="-2" pref="90" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txt_Fullname" min="-2" pref="245" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lbl_InniDate" min="-2" pref="90" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txt_Username" min="-2" pref="245" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel17" min="-2" pref="90" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txt_Password" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel19" min="-2" pref="90" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txt_Email" min="-2" pref="245" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel24" min="-2" pref="90" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lbl_deliDate1" alignment="1" min="-2" pref="90" max="-2" attributes="0"/>
+                                          <Component id="jLabel20" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace type="separate" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="txt_Address" pref="245" max="32767" attributes="0"/>
+                                      <Component id="txt_Phonenum" max="32767" attributes="0"/>
+                                      <Component id="lbl_innidate" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txt_Username" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                          <Component id="lbl_InniDate" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txt_Fullname" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="lbl_OrderPrice" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txt_Email" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="jLabel19" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txt_Password" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="jLabel17" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel24" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="txt_Phonenum" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txt_Address" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="jLabel20" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="lbl_deliDate1" min="-2" pref="30" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="5" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="lbl_innidate" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lbl_deliDate" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="btn_state" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="lbl_status" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cbx_Role" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="lbl_deliDate2" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="btn_Save" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel17">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="M&#x1ead;t kh&#x1ea9;u"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btn_Save">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="ff" red="99" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="L&#x1b0;u"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_SaveActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbl_InniDate">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="T&#xea;n &#x111;&#x103;ng nh&#x1ead;p"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbl_OrderPrice">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="H&#x1ecd; t&#xea;n"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel19">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Email"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel20">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#x110;&#x1ecb;a ch&#x1ec9;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel24">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="S&#x1ed1; &#x111;i&#x1ec7;n tho&#x1ea1;i"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbl_deliDate">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Tr&#x1ea1;ng th&#xe1;i"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_Username">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_UsernameActionPerformed"/>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_UsernameKeyReleased"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_Fullname">
+              <Events>
+                <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_FullnameKeyPressed"/>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_FullnameKeyReleased"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_Email">
+              <Events>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_EmailKeyReleased"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_Address">
+              <Events>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_AddressKeyReleased"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="txt_Password">
+              <Events>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_PasswordKeyReleased"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_Phonenum">
+              <Events>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_PhonenumKeyReleased"/>
+                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_PhonenumKeyTyped"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="btn_state">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="State"/>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="btn_stateItemStateChanged"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_stateActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbl_deliDate2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Quy&#x1ec1;n truy c&#x1ead;p"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbx_Role">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="3">
+                    <StringItem index="0" value="Kh&#xe1;ch h&#xe0;ng"/>
+                    <StringItem index="1" value="Admin"/>
+                    <StringItem index="2" value="Root"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cbx_RoleItemStateChanged"/>
+                <EventHandler event="caretPositionChanged" listener="java.awt.event.InputMethodListener" parameters="java.awt.event.InputMethodEvent" handler="cbx_RoleCaretPositionChanged"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbl_deliDate1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ng&#xe0;y t&#x1ea1;o"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbl_innidate">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="12" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbl_status">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="12" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="btn_Refresh">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="L&#xe0;m m&#x1edb;i"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_RefreshActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
