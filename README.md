@@ -1,36 +1,35 @@
-# PhoneShop Management System
+# Hệ Thống Quản Lý Cửa Hàng Bán Điện Thoại – PhoneShop
 
-A Java-based desktop application designed for managing mobile phone store operations. This project implements a full CRUD system with a structured multi-layer architecture, providing features for product management, employee tracking, customer records, and sales processing.
+Đây là một ứng dụng desktop viết bằng ngôn ngữ Java, hỗ trợ quản lý toàn diện cho cửa hàng bán điện thoại. Dự án được xây dựng theo mô hình nhiều lớp (BUS – DTO – DAL – GUI), kết hợp với cơ sở dữ liệu MySQL và giao diện đồ họa bằng Java Swing.
 
-## 🔧 Features
+## 🔧 Tính Năng Chính
 
-- Product management (add, edit, delete phones)
-- Inventory and brand tracking (Samsung, OPPO, etc.)
-- Employee and user role management
-- Customer data handling
-- Invoice and order management
-- Graphical User Interface (Java Swing)
-- Relational database connection (MySQL)
+- Quản lý sản phẩm: thêm, sửa, xóa thông tin điện thoại
+- Quản lý kho và thương hiệu (Samsung, OPPO, v.v.)
+- Quản lý nhân viên và phân quyền người dùng
+- Lưu trữ và truy xuất thông tin khách hàng
+- Lập hóa đơn và quản lý đơn hàng
+- Giao diện đồ họa thân thiện với người dùng
 
-## 📁 Project Structure
+## 📁 Cấu Trúc Dự Án
 
-- `GUI/` – Java Swing interfaces
-- `DTO/` – Data Transfer Objects
-- `BUS/` – Business logic layer
-- `DAL/` – Data access layer for database interactions
-- `assets/` – Icons and UI assets
-- `mobileshop.sql` – MySQL database schema
+- `GUI/` – Giao diện người dùng (Java Swing)
+- `DTO/` – Các lớp đối tượng trung gian dữ liệu
+- `BUS/` – Lớp xử lý nghiệp vụ
+- `DAL/` – Lớp truy xuất cơ sở dữ liệu
+- `assets/` – Hình ảnh và tài nguyên giao diện
+- `mobileshop.sql` – Tệp khởi tạo cơ sở dữ liệu MySQL
 
-## 🛠 Technologies Used
+## 🛠 Công Nghệ Sử Dụng
 
-- Java (JDK 8+)
+- Java (JDK 8 trở lên)
 - Java Swing
 - MySQL
-- NetBeans (build via `build.xml`)
+- NetBeans (sử dụng `build.xml`)
 - JDBC
 
-## ⚙️ Setup Instructions
+## ⚙️ Hướng Dẫn Cài Đặt
 
-1. Clone the repository:
+1. Clone repository về máy:
    ```bash
-   git clone https://github.com/yourusername/Webbanhang.git
+   git clone https://github.com/pqtoannn/Webbanhang.git
